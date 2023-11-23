@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Web de Produits Locaux</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="dev-1">
+            <img src="images/logo.png" alt="">
+            <div class="navBar">
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Produite</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <i class="ri-subscript" id="classBtn"></i>
+            </div>
+        </div>
+        <div class="dev-2">
+            <i class="ri-search-line"></i>
+            <i class="ri-shopping-cart-fill"></i>
+            <button class="btn-1">S'abonner</button>
+
+            <i class="ri-menu-3-line" id="classMenu"></i>
+        </div>
+    </header>
+
+    <div class="acceil">
+        <div class="container">
+            <h5>Produits Locaux</h5>
+            <h1>Transformation <br> Agroalimentaire</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, ipsam voluptatem?<br> Dolor officia tempora nulla vel debitis inventore rem veniam ad iure laborum voluptatum.</p>
+        </div>
+        <div class="button">
+        <button class="btn-1">Choisissez voter ... </button>
+        </div>
+    </div>
+</body>
+
+<script>
+    let navBar = document.querySelector('.navBar');
+    let classMenu = document.querySelector('#classMenu');
+    let classBtn = document.querySelector('#classBtn');
+
+
+
+    classMenu.onclick = () => {
+        navBar.classList.add('active');
+    }
+    classBtn.onclick = () => {
+        navBar.classList.remove('active');
+    }
+</script>
+</html>
